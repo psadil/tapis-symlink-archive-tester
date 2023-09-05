@@ -1,0 +1,17 @@
+{
+    "name": "symlink-archive-test",
+    "appId": "psadil-symlink-archive-tester",
+    "appVersion": "0",
+    "moduleLoads": [
+        {
+            "moduleLoadCommand": "module load",
+            "modulesToLoad": [
+                "tacc-apptainer"
+            ]
+        }
+    ],
+    "hiddenOptions": [
+        "MEM"
+    ],
+    "maxMinutes": 10
+}

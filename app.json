@@ -1,0 +1,28 @@
+{
+    "id": "psadil-symlink-archive-tester",
+    "version": "0",
+    "description": "Test archiving of symlinks",
+    "runtime": "SINGULARITY",
+    "runtimeVersion": null,
+    "runtimeOptions": [
+        "SINGULARITY_RUN"
+    ],
+    "containerImage": "docker://psadil/symlink_archive_app:latest",
+    "jobType": "BATCH",
+    "jobAttributes": {
+        "description": null,
+        "dynamicExecSystem": false,
+        "execSystemConstraints": null,
+        "execSystemId": "secure.frontera",
+        "execSystemExecDir": "${JobWorkingDir}",
+        "execSystemInputDir": "${JobWorkingDir}",
+        "execSystemOutputDir": "${JobWorkingDir}",
+        "execSystemLogicalQueue": "corralextra",
+        "archiveSystemId": "secure.frontera",
+        "archiveSystemDir": "/corral-secure/projects/A2CPS/shared/psadil/symlink-archive-test",
+        "archiveOnAppError": false,
+        "isMpi": false,
+        "mpiCmd": null,
+        "cmdPrefix": null
+    }
+}
