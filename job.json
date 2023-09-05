@@ -1,7 +1,15 @@
 {
     "name": "symlink-archive-test",
     "appId": "psadil-symlink-archive-tester",
-    "appVersion": "0",
+    "appVersion": "0.1",
+    "parameterSet": {
+        "appArgs": [
+            {
+                "name": "ROOT",
+                "arg": "$PWD"
+            }
+        ]
+    },
     "moduleLoads": [
         {
             "moduleLoadCommand": "module load",
