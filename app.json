@@ -1,6 +1,6 @@
 {
     "id": "psadil-symlink-archive-tester",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Test archiving of symlinks",
     "runtime": "SINGULARITY",
     "runtimeVersion": null,
@@ -30,6 +30,14 @@
                     "name": "ROOT",
                     "inputMode": "REQUIRED",
                     "arg": null
+                }
+            ],
+            "containerArgs": [
+                {
+                    "name": "Container Mounts",
+                    "description": "Mount for TAP functions",
+                    "inputMode": "FIXED",
+                    "arg": "--bind /corral-secure/projects/A2CPS"
                 }
             ]
         }
